@@ -1,0 +1,268 @@
+/* Your Stylesheet */
+#display-01 div {
+    display: inline;
+    border: solid blue 1px; 
+    margin: 20px;
+}
+
+#display-02 span {
+    display: block;
+    border: solid red 1px;
+}
+
+#display-03 div {
+    display: inline-block;
+    border: solid green 1px;
+    width: 100px;
+    height: 100px;
+}
+
+#display-04 :first-child{
+    display: none;
+}
+
+#display-05 a {
+    display: block;
+    background-color: rgb(217, 222, 226);
+    margin-left: auto;
+    margin-right: auto;  
+    width: 600px;  
+    padding: 25px;   
+}
+
+#boxmodel-01 div {
+    border: solid 30px;
+    color: rgb(0, 0, 0);
+    padding: 50px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#boxmodel-02 div {
+    border: solid 30px;
+    color: black;
+    padding: 50px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+#float-01>:first-child {
+    float: left;
+    margin: 25px 25px 20px 20px;
+}
+
+#float-02>:first-child {
+    float: right;
+    margin: 20px;
+}
+
+#float-02 p {
+    text-align: justify;
+}
+
+#float-03>:first-child{
+    float:left;
+    margin: 25px;
+}
+
+#float-03 p.clear {
+    
+    clear: both;
+}
+
+#float-04 div {
+    background-color: rgb(89, 202, 210);
+}
+
+#float-04 img {
+    float: left;
+    margin: 20px;
+    
+}
+
+#float-04 div::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#float-05 p {
+    width: 50%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+#float-05 p:first-child {
+    float: left;
+    border-right: 1px solid black;
+}
+
+#float-05 p:last-child {
+    float: right;
+}
+
+#float-06 div p {
+    width: 50%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+#float-06 p:first-child {
+    float: left;
+    border-right: 1px solid black;
+}
+
+#float-06 p:last-child {
+    float: right;
+}
+
+#position-01 div {
+    background-color: rgb(209, 34, 15);
+    display: block;
+    width: 80px;
+    height: 80px;
+}
+
+#position-01 div:nth-child(even) {
+    position: relative;
+    left: 80px; 
+}
+
+#position-02 div::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 90%;
+    height: 1px;
+    background: black;
+} 
+
+#position-02 span:first-child {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+#position-02 span:nth-child(2) {
+    top: 0;
+    left: 97%;
+    position: absolute;
+}
+
+#position-02 span:nth-child(3) {
+    top: 70%;
+    right: 0;
+    position: absolute;
+}
+
+#position-02 span:last-child {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+
+#position-03 div {
+    position: relative;
+    border: 1px solid black;
+    height: 100px;
+    width: 100%;
+}
+
+#position-03 div span:first-child {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+#position-03 div span:nth-child(2) {
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+#position-03 div span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+#position-03 div span:last-child {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+#position-04 div {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#position-04 {
+    position: static;
+}
+
+#position-05 {
+    position: relative;
+    height: 0 rem;
+}
+
+#position-05 .outer-box {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    background-color: lightgray;
+}
+
+#position-05 .outer-box:first-child {
+    left: 0;
+    top: 0;
+}
+
+#position-05 .outer-box:last-child {
+    right: 0;
+    top: 0;
+}
+
+#position-05 .inner-box {
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    background-color: rgb(0, 0, 0);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#position-06 {
+    position: relative;
+}
+
+#position-06 div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: lavender;
+}
+
+#position-07 a {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: rgb(211, 211, 211);
+    padding: 10px;
+    color: black;
+    border-radius: 1px;
+}
+
+#position-07 a:hover {
+    background-color: rgb(128, 128, 128);
+    color: rgb(0, 0, 0);
+}
+
